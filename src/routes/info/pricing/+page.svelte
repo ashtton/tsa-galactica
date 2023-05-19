@@ -1,6 +1,6 @@
 <script>
     import {page} from "$lib/page_store.js";
-    page.set("pricing")
+    page.set("Pricing")
 </script>
 
 <section class="animate__animated animate__fadeIn">

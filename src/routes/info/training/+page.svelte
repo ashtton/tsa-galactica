@@ -1,6 +1,6 @@
 <script>
     import {page} from "$lib/page_store.js";
-    page.set("training")
+    page.set("Training")
 </script>
 
 <section class="animate__animated animate__fadeIn">

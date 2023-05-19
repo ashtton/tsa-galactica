@@ -72,7 +72,13 @@
     let particlesInit = async main => {
         await loadFull(main);
     };
+
+    import {page} from "$lib/page_store.js";
 </script>
+
+<svelte:head>
+    <title>Galactica - {$page}</title>
+</svelte:head>
 
 <main>
     <slot />

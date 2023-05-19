@@ -8,7 +8,7 @@
 </script>
 
 <Tooltip tip={name} bottom>
-    <a href="/info/{ref}" class="option {$page === ref ? 'selected' : ''}">
+    <a href="/info/{ref}" class="option {$page.replaceAll(' ', '_').toLowerCase() === ref ? 'selected' : ''}">
         <div class="image">
             <slot />
         </div>

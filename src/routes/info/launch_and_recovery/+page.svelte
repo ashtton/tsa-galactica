@@ -1,6 +1,6 @@
 <script>
     import {page} from "$lib/page_store.js";
-    page.set("launch_and_recovery")
+    page.set("Launch and Recovery")
 </script>
 
 <section class="animate__animated animate__fadeIn">

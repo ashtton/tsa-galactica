@@ -5,6 +5,8 @@
     import IoIosBicycle from 'svelte-icons/io/IoIosBicycle.svelte'
     import IoIosCar from 'svelte-icons/io/IoIosCar.svelte'
     import IoMdRocket from 'svelte-icons/io/IoMdRocket.svelte'
+    import {page} from "$lib/page_store.js";
+    page.set("Home")
 </script>
 
 <section>
