@@ -1,11 +1,13 @@
 <script>
     import NavOption from '$lib/components/home/navoption.svelte'
+
     import IoIosPricetags from 'svelte-icons/io/IoIosPricetags.svelte'
     import IoIosCalendar from 'svelte-icons/io/IoIosCalendar.svelte'
     import IoIosBicycle from 'svelte-icons/io/IoIosBicycle.svelte'
     import IoIosCar from 'svelte-icons/io/IoIosCar.svelte'
     import IoMdRocket from 'svelte-icons/io/IoMdRocket.svelte'
     import {page} from "$lib/page_store.js";
+
     page.set("Home")
 </script>
 
@@ -16,7 +18,7 @@
                 GALACTICA
             </div>
             <div class="subtitle">
-                Space Tourism - The Right Way
+                Space Tourism Agency
             </div>
         </div>
 

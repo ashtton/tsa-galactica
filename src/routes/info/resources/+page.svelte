@@ -1,11 +1,6 @@
-<script>
-    import {page} from "$lib/page_store.js";
-    page.set("Training")
-</script>
-
 <section class="animate__animated animate__fadeIn">
-    <p class="title">Training</p>
-    <p class="subtitle">Use this guide for your training sessions before departing.</p>
+    <p class="title">Resources Used</p>
+    <p class="subtitle">These are the resources used to create this website.</p>
 </section>
 
 <style>

@@ -4,5 +4,18 @@
 </script>
 
 <section class="animate__animated animate__fadeIn">
-    <h1>Launch and Recovery</h1>
+    <p class="title">Launch and Recovery</p>
+    <p class="subtitle">Here's the information on the launch and recovery of the space ships.</p>
 </section>
+
+<style>
+    .title {
+        margin-top: 2rem;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .subtitle {
+        margin-bottom: 1rem;
+    }
+</style>

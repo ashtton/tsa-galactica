@@ -74,6 +74,7 @@
     };
 
     import {page} from "$lib/page_store.js";
+    import Footer from '$lib/components/footer.svelte'
 </script>
 
 <svelte:head>
@@ -81,8 +82,11 @@
 </svelte:head>
 
 <main>
-    <slot />
+    <div><slot /></div>
+    <Footer />
 </main>
+
+
 
 <Particles
         id="particles"
@@ -94,12 +98,13 @@
     :global(body) {
         color: white;
         background-color: black;
-        font-family: arial;
+        font-family: Arial, arial;
         margin: 0;
     }
 
     :global(a) {
         text-decoration: none;
+        color: inherit;
     }
 
     :global(a):visited {
@@ -108,5 +113,16 @@
 
     :global(p) {
         margin: 0;
+    }
+
+    main div:first-child {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 </style>
