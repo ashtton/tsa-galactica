@@ -1,11 +1,13 @@
 <script>
+    import {page} from "$lib/page_store.js";
+
     let guidelines = "https://tsaweb.org/docs/default-source/themes-and-problems-2018-2019/2022-2023/hs---webmaster.pdf?sfvrsn=9d75e16c_2";
 </script>
 <footer class="container animate__animated animate__delay-1s animate__fadeInUp">
     <div class="footer">
         <div class="copyright animate__animated">© 2023 Galactica Inc.</div>
         <div class="links">
-            <a class="link" href="/info/resources">Resources</a> <span>|</span>
+            <a class="link {$page === 'resources' ? 'selected' : ''}" href="/info/resources">Resources</a> <span>|</span>
             <a class="link" target="_blank" href="https://github.com/ashtton/tsa-galactica" >Github</a> <span>|</span>
             <a class="link" target="_blank" href="{guidelines}">TSA Guidelines</a>
         </div>
@@ -37,7 +39,7 @@
         color: gray;
     }
 
-    .link:hover {
+    .link:hover, .selected {
         color: white;
     }
 

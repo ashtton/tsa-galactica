@@ -15,22 +15,15 @@
     });
 </script>
 
-<div class="planet {$chosenPlanet !== undefined && $chosenPlanet.name === src ? 'chosen' : ''}" on:click={() => {
-    let beforeValue = $chosenPlanet;
-
-    chosenPlanet.set({
+<div class="planet {$chosenPlanet !== undefined && $chosenPlanet.name === src ? 'chosen' : ''}" on:click={() =>  chosenPlanet.set({
         name: src,
         miles: miles,
         time: time,
         price: parseFloat(price) / 900
-    });
-
-    if (beforeValue === undefined) {
-        goto("#choose-package")
-    }
-}}>
-    <Tooltip tip="<strong>{src.charAt(0).toUpperCase() + src.substring(1)}</strong><br>- {miles} Miles<br>- {time}<br>- {formatter.format(parseFloat(price) / 900)}"
-             bottom>
+})}>
+    <Tooltip
+            tip="<strong>{src.charAt(0).toUpperCase() + src.substring(1)}</strong><br>- {miles} Miles<br>- {time}<br>- {formatter.format(parseFloat(price) / 900)}"
+            bottom>
         <img alt="{src}" style="--animate-delay: {delay}"
              class="image animate__animated animate__fadeIn animate__delay-1s" height="72px"
              src="/images/planets/{src}.png">

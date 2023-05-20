@@ -28,6 +28,7 @@
                 <div class="list-o animate__animated animate__delay-1s animate__fadeIn"><div class="header"><div class="icon"><IoMdPizza /></div>Dinner</div>We serve Dinner from 5:00 - 7:00 PM daily.</div><br>
                 <div class="list-o animate__animated animate__delay-1s animate__fadeIn"><div class="header"><div class="icon"><GiVacuumCleaner /></div>Cleaning</div>Rooms are cleaned every two days by our maids.</div><br>
                 <div class="list-o animate__animated animate__delay-1s animate__fadeIn"><div class="header"><div class="icon"><GiTShirt /></div>Laundry</div>There are laundry services available.</div><br>
+                <div class="list-o animate__animated animate__delay-1s animate__fadeIn"><div class="header"><div class="icon"><GiTShirt /></div>Hospital</div>All of your medical needs can be taken care of.</div><br>
             </div>
         </div>
         <div>

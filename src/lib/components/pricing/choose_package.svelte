@@ -65,7 +65,7 @@
                 <div class="detail"><div class="arrow"><IoMdArrowDropright /></div>High speed internet access</div>
                 <div class="detail"><div class="arrow"><IoMdArrowDropright /></div>A full suite of rooms</div>
                 <div class="detail"><div class="arrow"><IoMdArrowDropright /></div>Access to the training room</div>
-                <div class="detail"><div class="arrow"><IoMdArrowDropright /></div>Access to the theater room</div>
+                <div class="detail"><div class="arrow"><IoMdArrowDropright /></div>Free movies in the theater</div>
             </div>
         </div>
     </div>
