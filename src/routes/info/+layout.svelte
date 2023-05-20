@@ -85,6 +85,13 @@
         height: 0;
     }
 
+    @media(max-width: 800px) {
+        .container {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
     @media(max-width: 420px) {
         .title {
             font-size: 1.7rem;

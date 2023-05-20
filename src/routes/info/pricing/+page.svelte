@@ -3,9 +3,9 @@
     page.set("Pricing")
 
     import ChoosePlanet from '$lib/components/pricing/choose_planet.svelte'
-    import ChooseRocket from '$lib/components/pricing/choose_rocket.svelte'
+    import ChooseRocket from '$lib/components/pricing/choose_package.svelte'
     import PriceCalc from '$lib/components/pricing/pricing_calculation.svelte'
-    import {chosenPlanet, chosenRocket} from "$lib/stores/pricing_store.js";
+    import {chosenPlanet, chosenPackage} from "$lib/stores/pricing_store.js";
 
 </script>
 
@@ -16,7 +16,7 @@
     {#if $chosenPlanet !== undefined}
         <ChooseRocket />
     {/if}
-    {#if $chosenRocket !== undefined}
+    {#if $chosenPackage !== undefined}
         <PriceCalc />
     {/if}
 </section>
