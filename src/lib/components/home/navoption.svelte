@@ -1,12 +1,39 @@
 <script>
+    import {onMount} from "svelte";
+
     export let name;
     export let ref;
     export let tip;
 
     import Tooltip from "sv-tooltip"
+
+    let screenSize;
+
+    function updateScreenSize() {
+        setTimeout(() => {
+            screenSize = window.screen.width
+            updateScreenSize()
+        }, 1000)
+    }
+
+    onMount(() => {
+        screenSize = window.screen.width;
+        updateScreenSize()
+    })
 </script>
 
-<Tooltip tip={tip} top>
+{#if screenSize > 800}
+    <Tooltip tip={tip} top>
+        <a href="/info/{ref}" class="option">
+            <div class="image">
+                <slot />
+            </div>
+            <div class="desc">
+                <p>{name}</p>
+            </div>
+        </a>
+    </Tooltip>
+{:else}
     <a href="/info/{ref}" class="option">
         <div class="image">
             <slot />
@@ -15,7 +42,9 @@
             <p>{name}</p>
         </div>
     </a>
-</Tooltip>
+{/if}
+
+
 
 <style>
     .image {
@@ -31,6 +60,7 @@
         align-items: center;
         cursor: pointer;
         justify-content: center;
+        user-select: none;
     }
 
     .option:hover {

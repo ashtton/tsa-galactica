@@ -86,8 +86,6 @@
     <Footer />
 </main>
 
-
-
 <Particles
         id="particles"
         options={conf}
