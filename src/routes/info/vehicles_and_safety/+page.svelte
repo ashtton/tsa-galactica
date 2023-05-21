@@ -4,11 +4,11 @@
 </script>
 
 <section class="animate__animated animate__fadeIn">
-    <div class="vehicles">
+    <div class="animate__animated animate__delay-1s animate__fadeIn" style="--animate-delay: 0.5s">
         <p class="title">Vehicles</p>
         <p class="subtitle">Take a look at the vehicles used on the trip.</p>
         <div>
-            <div class="animate__animated animate__delay-1s animate__fadeIn" style="--animate-delay: 0.5s">
+            <div>
                 <p class="title">SC-404</p>
                 <p style="font-size: 1.2rem">Our only rocket ready for take-off which is named the SC-404. Being made out of Graphite-epoxy, it is
                 super durable and resistant to heat elements, which allows for a safe exit and re-entry from Earth. Holding up
@@ -19,18 +19,18 @@
             </div>
         </div>
     </div>
-    <div class="safety">
-        <p class="title animate__animated animate__delay-1s animate__fadeIn">Safety Information</p>
-        <p class="subtitle animate__animated animate__delay-1s animate__fadeIn">Take a look at this safety information.</p>
-        <div class="animate__animated animate__delay-3s animate__fadeIn" style="--animate-delay: 0.5s">
-            <ol style="font-size: 1.2rem">
+    <div class="animate__animated animate__delay-2s animate__fadeIn" style="--animate-delay: 0.5s">
+        <p class="title">Safety Information</p>
+        <p class="subtitle">Take a look at this safety information.</p>
+        <div>
+            <ul style="font-size: 1.2rem">
                 <li>Each room is equipped with it's own safety pod.</li>
                 <li>Fire extinguishers are located in every room.</li>
                 <li>The ship is fully equipped with fire/carbon monoxide detectors.</li>
                 <li>There will be a pre-takeoff briefing of the whole ship.</li>
                 <li>The hospital suite is equipped with medical professionals.</li>
                 <li>Extensive security measures are taken with a large team.</li>
-            </ol>
+            </ul>
         </div>
     </div>
 </section>
