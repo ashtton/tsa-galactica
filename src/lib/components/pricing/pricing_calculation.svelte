@@ -41,6 +41,10 @@
         font-size: 1.5rem;
     }
 
+    .price-steps div:nth-child(2) {
+        margin-top: 1rem;
+    }
+
     .price-steps div:not(:first-child) {
         margin-left: 1rem;
         display: flex;
