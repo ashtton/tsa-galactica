@@ -19,12 +19,12 @@
 <div id="price" class="step animate__animated animate__fadeInDown">
     <div class="price-steps">
         <div>Visiting <strong>{$chosenPlanet.name.charAt(0).toUpperCase() + $chosenPlanet.name.substring(1)}</strong></div>
-        <div>+ Fuel Cost - <span class="price">{formatter.format($chosenPlanet.price)}</span></div>
+        <div>Fuel Cost<span class="price">{formatter.format($chosenPlanet.price)}</span></div>
         {#if $chosenPackage.name !== "standard"}
-            <div>+ {$chosenPackage.name.charAt(0).toUpperCase() + $chosenPackage.name.substring(1)} Package - <span class="price">{formatter.format($chosenPackage.price)}</span></div>
+            <div>{$chosenPackage.name.charAt(0).toUpperCase() + $chosenPackage.name.substring(1)} Package<span class="price">{formatter.format($chosenPackage.price)}</span></div>
         {/if}
-        <div>+ Training Course - <span class="price">$500.00</span></div>
-        <div>+ Tax - <span class="price">{formatter.format(currentPrice * 0.1)}</span></div>
+        <div>Training Course<span class="price">$500.00</span></div>
+        <div>Tax<span class="price">{formatter.format(currentPrice * 0.1)}</span></div>
         <hr>
         <div>Total Cost: <span class="price">{formatter.format(currentPrice * 1.1)}</span></div>
     </div>
@@ -43,11 +43,17 @@
 
     .price-steps div:not(:first-child) {
         margin-left: 1rem;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .visit {
-
+    @media(max-width: 450px) {
+        .price-steps {
+            font-size: 1.3rem;
+        }
+        .price {
+            font-size: 1.5rem;
+        }
     }
-
 
 </style>
