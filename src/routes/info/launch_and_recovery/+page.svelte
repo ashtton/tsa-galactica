@@ -4,12 +4,10 @@
 </script>
 
 <section class="animate__animated animate__fadeIn">
-    <p class="title">Launch</p>
-    <p class="subtitle">Here's the information on the launch and recovery of the space ships.</p>
-    <div class="animate__animated animate__delay-1s animate__fadeIn" style="--animate-delay: 0.5s">
-        <p class="title">Recovery</p>
-        <p class="subtitle">Here's the information on the launch and recovery of the space ships.</p>
-    </div>
+    <p class="title">Launch and Recovery</p>
+    <p class="subtitle">All our launches are held at either Florida or California. All passengers will be required
+    to wear a pressure suit for launch. Our rocket ships are unlike the traditional ship, they stay in one piece through
+    the atmosphere. This allows our ships to autonomously land back at the launch site when coming back to Earth.</p>
 </section>
 
 <style>
