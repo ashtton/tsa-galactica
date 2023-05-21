@@ -8,6 +8,13 @@
     <p class="subtitle">These are the resources used to create this website.</p>
     <div class="info">
         <div>
+            <p class="title">TSA Documents:</p>
+            <ul style="font-size: 1.2rem;">
+                <li class="link"><a href="/docs/Worklog.pdf" target="_blank">Worklog</a></li>
+                <li class="link"><a href="/docs/CopyrightChecklist.pdf" target="_blank">Copyright Checklist</a></li>
+            </ul>
+        </div>
+        <div>
             <p class="title">Information Resources:</p>
             <ul style="font-size: 1.2rem;">
                 <li class="link"><a href="https://global.jaxa.jp/" target="_blank">Jaxa</a></li>
